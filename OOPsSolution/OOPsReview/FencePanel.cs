@@ -41,6 +41,8 @@ namespace OOPsReview
             }
             set
             {
+                //validation of data
+                //throw exception if invalid
                 if (value >0 && value <=8.0)
                 {
                     _Height = value;
@@ -92,5 +94,23 @@ namespace OOPsReview
 
         public double? Price { get; set; }
 
+        //Constructor
+
+        //Either you could code your constructors or you omit your consrtuctors
+        //IF you omit constructors then the system will initialize 
+        //  your data members to the natural system defaults for that data member datatype. 
+
+        //If you code any constructors, you are responsible for coding all constructors to be used by this class
+        
+        //default
+        //simulates the system initialization of your data
+        //default executes on a : new FencePanel();
+        public FencePanel()
+        {
+            //optionally you can override the system values with your own values 
+            Height = 6.0;
+            Width = 8.0;
+            //the remainder of your data value would be the system values 
+        }
     }
 }
