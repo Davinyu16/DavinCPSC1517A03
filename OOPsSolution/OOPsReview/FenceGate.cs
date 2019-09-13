@@ -55,6 +55,10 @@ namespace OOPsReview
 
         public double Price { get; set; }
 
+        public FenceGate()
+        {
+
+        }
         public FenceGate(double height, double width, string style, double price)
         {
             Height = height;

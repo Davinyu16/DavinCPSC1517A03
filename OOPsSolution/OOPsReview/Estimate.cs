@@ -15,6 +15,19 @@ namespace OOPsReview
         public FencePanel Panel { get; set; }
         public List<FenceGate> Gates { get; set; }
 
+        public Estimate()
+        {
+            //this constructor emulates the system constructor
+        }
+
+        public Estimate(double linearlength, FencePanel panel, List<FenceGate> gates)
+        {
+            LinearLength = linearlength;
+            Panel = panel;
+            Gates = gates;
+            //optionally:
+            CalculatePrice();
+        }
         public double CalculatePrice()
         {
             //assuming the Panel and Gate instances exist and are correct 
