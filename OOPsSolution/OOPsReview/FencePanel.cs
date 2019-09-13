@@ -96,12 +96,12 @@ namespace OOPsReview
 
         //Constructor
 
-        //Either you could code your constructors or you omit your consrtuctors
+        //Either you could code your constructors or you omit your constructors
         //IF you omit constructors then the system will initialize 
         //  your data members to the natural system defaults for that data member datatype. 
 
         //If you code any constructors, you are responsible for coding all constructors to be used by this class
-        
+
         //default
         //simulates the system initialization of your data
         //default executes on a : new FencePanel();
@@ -112,5 +112,33 @@ namespace OOPsReview
             Width = 8.0;
             //the remainder of your data value would be the system values 
         }
-    }
-}
+
+        //Greedie constructor
+        //The constructor has a list of parameters which will recieve an argument value for each property in the class 
+        
+        public FencePanel(double height, double width, string style, double? price)
+        {
+            Height = height;
+            Width = width;
+            Style = style;
+            Price = price;
+        }
+
+        //Behaviours (a.k.a methods) 
+        public double EstimatedNumberOfPanels(double linearlength)
+        {
+            //linearlength is the full length of the fence needed
+            //You could use either the Width property or the data member _Width
+            //Using the property ensures all validation or excess logic is in play 
+            double numberofpanels = linearlength / Width; //or we could use _Width
+            return numberofpanels; 
+        }
+
+        public double FenceArea(double linearlength)
+        {
+            //return linearlength * Height;
+            return Width * Height * EstimatedNumberOfPanels(linearlength);
+        }
+
+    } //eoc: end of class
+}//eon: end of name
