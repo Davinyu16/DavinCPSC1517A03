@@ -127,6 +127,7 @@
     <Content Include="Default.cshtml" />
     <Content Include="RadioButton.cshtml" />
     <Content Include="CheckBoxes.cshtml" />
+    <Content Include="MultiRecordQuery.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -144,6 +145,7 @@
     <Content Include="_Menu.cshtml" />
     <Content Include="_LayoutMenu.cshtml" />
     <Content Include="WebConnectionString.config" />
+    <Content Include="WebGridDisplay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
