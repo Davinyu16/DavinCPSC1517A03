@@ -111,35 +111,37 @@ Order by CategoryName";
                         <div class="col-12 text-center">
                             <p style="color:firebrick">You must select a category</p>
                         </div>
-                    }
-
-                    //data good
-                    try
-                    {
-                        //connect to database (done above)
-                        //create insert command
-                        var inscommand = @"INSERT INTO Products (ProductName, SupplierID, CategoryID,
+            }
+            if (valid)
+            {
+                //data good
+                try
+                {
+                    //connect to database (done above)
+                    //create insert command
+                    var inscommand = @"INSERT INTO Products (ProductName, SupplierID, CategoryID,
                                             QuantityPerUnit, UnitPrice, UnitsInStock,
                                             UnitsOnOrder, ReorderLevel, Discontinued)
                                             VALUES(@0, @1, @2, @3, @4, @5, @6, @7, 0)";
-                        //execute the command
-                        productid = db.Execute(inscommand, productname,
-                        string.IsNullOrEmpty(supplierid) ? null : supplierid,
-                        string.IsNullOrEmpty(categoryid) ? null : categoryid,
-                        string.IsNullOrEmpty(quantityperunit) ? null : quantityperunit,
-                        string.IsNullOrEmpty(unitprice) ? null : unitprice,
-                        string.IsNullOrEmpty(unitsinstock) ? null : unitsinstock,
-                        string.IsNullOrEmpty(unitsonorder) ? null : unitsonorder,
-                        string.IsNullOrEmpty(reorderlevel) ? null : reorderlevel).ToString();
+                    //execute the command
+                    productid = db.Execute(inscommand, productname,
+                    string.IsNullOrEmpty(supplierid) ? null : supplierid,
+                    string.IsNullOrEmpty(categoryid) ? null : categoryid,
+                    string.IsNullOrEmpty(quantityperunit) ? null : quantityperunit,
+                    string.IsNullOrEmpty(unitprice) ? null : unitprice,
+                    string.IsNullOrEmpty(unitsinstock) ? null : unitsinstock,
+                    string.IsNullOrEmpty(unitsonorder) ? null : unitsonorder,
+                    string.IsNullOrEmpty(reorderlevel) ? null : reorderlevel).ToString();
                         <div class="col-12 text-center">
                             <p style="color:lightseagreen">Product has been added.</p>
                         </div>
-                    }
-                    catch (Exception ex)
-                    {
+                }
+                catch (Exception ex)
+                {
                         <div class="col-12 text-center">
                             <p style="color:firebrick">Error in processing: @ex.Message</p>
                         </div>
+                }
             }
         }
     }
