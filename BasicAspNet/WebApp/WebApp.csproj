@@ -179,6 +179,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DDLClass.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -193,6 +194,7 @@
     <Compile Include="SamplePages\BasicControls.aspx.cs">
       <DependentUpon>BasicControls.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="SamplePages\BasicControls.aspx.designer.cs">
       <DependentUpon>BasicControls.aspx</DependentUpon>
