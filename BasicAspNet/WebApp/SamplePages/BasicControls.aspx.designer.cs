@@ -13,13 +13,13 @@ namespace WebApp.SamplePages {
     public partial class BasicControls {
         
         /// <summary>
-        /// TextBox1 control.
+        /// NumberChoice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox NumberChoice;
         
         /// <summary>
         /// SubmitNumberChoice control.
@@ -40,13 +40,13 @@ namespace WebApp.SamplePages {
         protected global::System.Web.UI.WebControls.Label AlterLabel;
         
         /// <summary>
-        /// RadioButtonList1 control.
+        /// ChoiceList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+        protected global::System.Web.UI.WebControls.RadioButtonList ChoiceList;
         
         /// <summary>
         /// Literal1 control.
@@ -67,6 +67,24 @@ namespace WebApp.SamplePages {
         protected global::System.Web.UI.WebControls.CheckBox ProgrammingCourseActive;
         
         /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// DisplayDataRO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DisplayDataRO;
+        
+        /// <summary>
         /// Label3 control.
         /// </summary>
         /// <remarks>
@@ -85,13 +103,13 @@ namespace WebApp.SamplePages {
         protected global::System.Web.UI.WebControls.DropDownList CollectionChoiceList;
         
         /// <summary>
-        /// CollectionSubmit control.
+        /// ColectionSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton CollectionSubmit;
+        protected global::System.Web.UI.WebControls.LinkButton ColectionSubmit;
         
         /// <summary>
         /// MessageLabel control.
