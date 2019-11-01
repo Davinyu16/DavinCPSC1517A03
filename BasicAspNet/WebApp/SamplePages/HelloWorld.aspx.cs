@@ -16,8 +16,7 @@ namespace WebApp.SamplePages
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            //this changes the existing string from the other page
-            HelloString.Text = "boo";
+            HelloString.Text = "BOO!";
             HelloString.ForeColor = System.Drawing.Color.Crimson;
             HelloString.Font.Size = 100;
         }

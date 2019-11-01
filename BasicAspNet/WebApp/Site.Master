@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApp.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" 
+    Inherits="WebApp.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +7,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %></title>
+    <title><%: Page.Title %> </title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -49,23 +50,24 @@
                     <a class="navbar-brand" runat="server" href="~/">Basic ASP.Net</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <%-- Given menu structure for a Master Page 
-                        Replacing this with a Menu.aspx control which will reference a 
-                        site siteMapDataSource control which points to the actual menu located in a .siteMap file--%>
-                    <%--<ul class="nav navbar-nav">
+                    <%-- given menu structure for a Master Page
+                        Replacing this with a Menu.apsx control which will reference
+                        a SiteMapDataSource control which points to the actually
+                        menu localed in a .sitemap file--%>
+                   <%-- <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/SamplePages/HelloWorld">Hello World</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>--%>
-                    <asp:Menu ID="Menu1" runat="server" 
-                        DataSourceID="BasicAspNetMenuDS" Orientation="Horizontal"
-                        StaticDisplayLevels="1"
-                        StaticMenuStyle-CssClass="nav nav-bar"
-                        StaticSelectedStyle-CssClass="active"
-                        DynamicMenuStyle-CssClass="dropdown-menu"
-                        IncludeStyleBlock="false" EnableTheming="false"
-                        EnableViewState="false"></asp:Menu>
+                    <asp:Menu ID="Menu1" runat="server"
+                         DataSourceID="BasicAspNetMenuDS" Orientation="Horizontal"
+                         StaticDisplayLevels="1"
+                         StaticMenuStyle-CssClass="nav nav-bar"
+                         StaticSelectedStyle-CssClass="active"
+                         DynamicMenuStyle-CssClass="dropdown-menu"
+                         IncludeStyleBlock="false" EnableTheming="false"
+                         EnableViewState="false"></asp:Menu>
                     <asp:SiteMapDataSource ID="BasicAspNetMenuDS" runat="server" 
                          ShowStartingNode="false"/>
                 </div>
@@ -77,7 +79,6 @@
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-               
             </footer>
         </div>
 
