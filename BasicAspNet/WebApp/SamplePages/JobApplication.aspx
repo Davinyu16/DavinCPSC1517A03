@@ -57,6 +57,7 @@
             <asp:Button ID="Clear" runat="server" Text="Clear" height="26px" width="63px" OnClick="Clear_Click" /><br />
             <asp:Label ID="Message" runat="server" ></asp:Label><br/><br/>
             <asp:Label ID="label10" runat="server" Text="Current Job Applications:"></asp:Label><br />
+            
             <asp:GridView ID="JobApplicationList" runat="server">
                 <EmptyDataTemplate>
                     No data to display

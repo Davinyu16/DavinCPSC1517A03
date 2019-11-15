@@ -14,9 +14,9 @@ namespace NorthwindSystem.Data
     [Table("Region")]
     public class Region
     {
-        //the Region primary key was created as a non-identity field in the
-        //  sql database (I did not make this decision)
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+        //the Region primary key was created as a non identity field in the
+        //   sql database (I did not make this descision)
+        [Key,DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int RegionID { get; set; }
         public string RegionDescription { get; set; }
     }
