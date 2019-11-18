@@ -4,7 +4,7 @@
     <div class="offset-2">
         <asp:Label ID="Label1" runat="server" Text="Select a Category:"></asp:Label>&nbsp;&nbsp;
         <asp:DropDownList ID="CategoryList" runat="server"></asp:DropDownList>&nbsp;&nbsp;
-        <asp:Button ID="Fetch" runat="server" Text="Fetch" />
+        <asp:Button ID="Fetch" runat="server" Text="Fetch" OnClick="Fetch_Click" />
         <br /><br />
         <asp:Label ID="MessageLabel" runat="server"></asp:Label>
         <br />
@@ -31,8 +31,8 @@
                 <asp:TemplateField HeaderText="Disc">
                     <ItemStyle HorizontalAlign="Center"></ItemStyle>
                     <ItemTemplate>
-                        <asp:CheckBox ID="CheckBox1" runat="server" />
-                            checked='<%# Eval("Discontinued")%>
+                        <asp:CheckBox ID="CheckBox1" runat="server" 
+                            checked='<%# Eval("Discontinued")%>/>
                     </ItemTemplate>
                 </asp:TemplateField>
                 
